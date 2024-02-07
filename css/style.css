@@ -1,0 +1,113 @@
+.preview-card {
+  height: 596px;
+  width: 350px;
+  padding: 24px;
+
+  background-color: hsl(216, 50%, 16%);
+  border-radius: 10px;
+}
+
+.preview-card > img {
+  width: 302px;
+  height: 302px;
+  border-radius: 8px;
+}
+
+.overlay img {
+  display: none;
+}
+
+.preview-card .overlay {
+  width: 302px;
+  height: 302px;
+  border-radius: 8px;
+  position: absolute;
+  z-index: 1;
+
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.discription a {
+  display: block;
+  width: fit-content;
+  text-decoration: none;
+  color: hsl(0, 0%, 100%);
+}
+
+.discription p {
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+}
+
+.info {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.info .points {
+  display: flex;
+  align-items: center;
+}
+
+.info .points img {
+  height: 20px;
+  width: 13px;
+}
+
+.info .points p {
+  margin-left: 10px;
+  font-size: 18px;
+  color: hsl(178, 100%, 50%);
+}
+
+.info .days-remaining {
+  display: flex;
+  align-items: center;
+}
+
+.info .days-remaining img {
+  width: 16px;
+  height: 16px;
+}
+
+.info .days-remaining p {
+  margin-left: 10px;
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+}
+
+.avatar {
+  display: flex;
+  align-items: center;
+}
+
+.avatar img {
+  width: 33px;
+}
+
+.avatar p {
+  margin-left: 10px;
+  font-size: 18px;
+  color: hsl(215, 51%, 70%);
+}
+
+.avatar p a {
+  color: hsl(0, 0%, 100%);
+  text-decoration: none;
+}
+
+.avatar p a:hover,
+.avatar p a:focus-visible,
+.discription a:hover,
+.discription a:focus-visible {
+  color: hsl(178, 100%, 50%);
+}
+
+@media (max-width: 375px) or (orientation: portrait) {
+  .preview-card {
+    scale: 0.931 0.909;
+  }
+}
